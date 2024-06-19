@@ -1,11 +1,22 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav className="p-[10px] flex justify-between bg-slate-900 text-white">
+    <div className="w-[35px] h-[35px] ">
+      <img src="./assets/logo.png" alt="logo" />
+    </div>
+    <div class="space-x-4 text-white">
+      <router-link to="/">Home</router-link>
+      <router-link to="/news">news</router-link>
+      <router-link to="/content">content</router-link>
+      <router-link to="/about">About</router-link>
+    </div>
+    <div className="space-x-4 pr-[50px] text-white">
+      <router-link to="/login">Login</router-link>
+      <router-link to="/signup">Signup</router-link>
+    </div>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
-
+<!-- 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -17,6 +28,8 @@
 
 nav {
   padding: 30px;
+  background-color: black;
+  
 }
 
 nav a {
@@ -27,4 +40,4 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
-</style>
+</style> -->
